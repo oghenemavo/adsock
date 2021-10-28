@@ -11,7 +11,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>CRM | Invoices | DashLite Admin Template</title>
+    <title>Sales Dashboard | DashLite Admin Template</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="./assets/css/dashlite.css?ver=2.8.0">
     <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=2.8.0">
@@ -237,47 +237,89 @@
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
-                                <div class="nk-block-head">
-                                    <div class="nk-block-between g-3">
-                                        <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">Sales</h3>
-                                        </div><!-- .nk-block-head-content -->
-                                    </div><!-- .nk-block-between -->
-                                </div><!-- .nk-block-head -->
-                                <div class="nk-block">
+                                <div class="components-preview wide-md mx-auto">
+                                    <div class="nk-block nk-block-lg">
+                                        <div class="nk-block-head nk-block-head-sm">
+                                            <div class="nk-block-between">
+                                                <div class="nk-block-head-content">
+                                                    <h4 class="nk-block-title">Roles</h4>
+                                                    <div class="nk-block-des">
+                                                        <p>Using the most basic table markup, here’s how <code
+                                                                class="code-class">.table</code> based tables look by
+                                                            default.</p>
+                                                    </div>
+                                                </div><!-- .nk-block-head-content -->
+                                                <div class="nk-block-head-content">
+                                                    <!-- <div class="toggle-wrap nk-block-tools-toggle">
+                                                        <a href="#" class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-more-v"></em></a>
+                                                        <div class="toggle-expand-content" data-content="pageMenu">
+                                                            <ul class="nk-block-tools g-3">
+                                                                <li class="nk-block-tools-opt">
+                                                                    <a href="#" data-toggle="modal" data-target="#addRole" class="toggle btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
+                                                                    <a href="#" data-toggle="modal" data-target="#addRole" class="toggle btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Add Role</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div> -->
+                                                </div><!-- .nk-block-head-content -->
+                                            </div><!-- .nk-block-between -->
+                                        </div><!-- .nk-block-head -->
 
-                                    <div class="card card-preview">
-                                        <div class="card-inner">
-                                            <table class="datatable-init nowrap table" data-export-title="Export">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Transaction ID</th>
-                                                        <th>Item ID</th>
-                                                        <th>Product</th>
-                                                        <th>Amount</th>
-                                                        <th>Created at</th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>01112</td>
-                                                        <td>99887</td>
-                                                        <td>Music and Tea</td>
-                                                        <td>800,00</td>
-                                                        <td>23 Jan 2019, 10:45pm</td>
-                                                        <td>
-                                                            <a href="#" data-toggle="modal" data-target="#viewSale">
-                                                                <em class="icon ni ni-eye"></em>
-                                                                <span>View Sale</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div><!-- .card-preview -->
-                                </div><!-- .nk-block -->
+                                        <div class="card card-preview">
+                                            <div class="card-inner">
+                                                <table class="datatable-init nowrap nk-tb-list nk-tb-ulist"
+                                                    data-auto-responsive="false">
+                                                    <thead>
+                                                        <tr class="nk-tb-item nk-tb-head">
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">ID</span></th>
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Role</span></th>
+                                                            <th class="nk-tb-col tb-col-lg"><span class="sub-text">Created at</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-tools text-right"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="nk-tb-item">
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>000768</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>Admin</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-lg">
+                                                                <span>05 Oct 2019</span>
+                                                            </td>
+                                                            <td class="nk-tb-col nk-tb-col-tools">
+                                                                <ul class="nk-tb-actions gx-1">
+                                                                    <li>
+                                                                        <div class="drodown">
+                                                                            <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown">
+                                                                                <em class="icon ni ni-more-h"></em>
+                                                                            </a>
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <ul class="link-list-opt no-bdr">
+                                                                                    <li>
+                                                                                        <a href="#" data-toggle="modal" data-target="#viewRole">
+                                                                                            <em class="icon ni ni-eye"></em><span>View Role</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li>
+                                                                                        <a href="#" data-toggle="modal" data-target="#editRole">
+                                                                                            <em class="icon ni ni-edit"></em><span>Edit Role</span>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr><!-- .nk-tb-item  -->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div><!-- .card-preview -->
+                                    </div> <!-- nk-block -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,43 +348,143 @@
         </div>
         <!-- main @e -->
     </div>
-    <!-- app-root @e -->
 
-    <!-- View Sale -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="viewSale">
+    <!-- View Role -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="viewRole">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
                 <div class="modal-body modal-body-md">
-                    <h5 class="modal-title">View Sale</h5>
-                    <dl class="row">
-                        <dt class="col-sm-3">Product Name</dt>
-                        <dd class="col-sm-9">Air wick</dd>
+                    <h5 class="modal-title">View Role</h5>
+                    <dl class="row pt-3">
+                        <dt class="col-sm-3">Role</dt>
+                        <dd class="col-sm-9">Admin</dd>
 
-                        <dt class="col-sm-3">Item ID</dt>
-                        <dd class="col-sm-9">00978AS</dd>
-
-                        <dt class="col-sm-3">Transaction ID</dt>
-                        <dd class="col-sm-9">00978AS</dd>
-
-                        <dt class="col-sm-3">Amount</dt>
-                        <dd class="col-sm-9">₦1700.00</dd>
-
-                        <dt class="col-sm-3">Created at</dt>
-                        <dd class="col-sm-9">2022-02-19</dd>
-
+                        <dt class="col-sm-3">Privileges</dt>
+                        <dd class="col-sm-9">
+                            <ul class="list list-checked">
+                                <li>Add User</li>
+                                <li>Check Transaction</li>
+                            </ul>
+                        </dd>
                     </dl>
+                    
                 </div><!-- .modal-body -->
             </div><!-- .modal-content -->
         </div><!-- .modal-dialog -->
     </div><!-- .modal -->
-    <!-- View Sale -->
+    <!-- View Contributor -->
 
+    <!-- Edit Role -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="editRole">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Edit Role</h5>
+                    <form action="#" class="mt-2">
+                        <div class="row g-gs">
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="edit_first_name">Role Name</label>
+                                    <input type="text" class="form-control" id="edit_first_name" placeholder="Role Name">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="custom-control custom-checkbox">    
+                                    <input type="checkbox" class="custom-control-input" id="customCheck1">    
+                                    <label class="custom-control-label" for="customCheck1">Add User</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button class="btn btn-primary">Edit User</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link" data-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Edit Contributor -->
 
+    <!-- Add User -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="addUser">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Add User</h5>
+                    <form action="#" class="mt-2">
+                        <div class="row g-gs">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="first_name">First Name</label>
+                                    <input type="text" class="form-control" id="first_name"
+                                        placeholder="First name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="last_name">Last Name</label>
+                                    <input type="text" class="form-control" id="last_name" placeholder="Last name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email Address</label>
+                                    <input type="email" class="form-control" id="email"
+                                        placeholder="Email Address">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="08000000000">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Role</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Admin</option>
+                                            <option value="option_select_name">Super Contributor</option>
+                                            <option value="option_select_name">Sub Contributor</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button class="btn btn-primary">Add User</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link" data-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Add Sub Contributor -->
 
+    <!-- app-root @e -->
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=2.8.0"></script>
     <script src="./assets/js/scripts.js?ver=2.8.0"></script>
+    <script src="./assets/js/charts/gd-default.js?ver=2.8.0"></script>
 </body>
 
 </html>

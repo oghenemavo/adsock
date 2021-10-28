@@ -11,7 +11,7 @@
     <!-- Fav Icon  -->
     <link rel="shortcut icon" href="./images/favicon.png">
     <!-- Page Title  -->
-    <title>CRM | Invoices | DashLite Admin Template</title>
+    <title>Sales Dashboard | DashLite Admin Template</title>
     <!-- StyleSheets  -->
     <link rel="stylesheet" href="./assets/css/dashlite.css?ver=2.8.0">
     <link id="skin-default" rel="stylesheet" href="./assets/css/theme.css?ver=2.8.0">
@@ -237,47 +237,86 @@
                     <div class="container-fluid">
                         <div class="nk-content-inner">
                             <div class="nk-content-body">
-                                <div class="nk-block-head">
-                                    <div class="nk-block-between g-3">
-                                        <div class="nk-block-head-content">
-                                            <h3 class="nk-block-title page-title">Sales</h3>
-                                        </div><!-- .nk-block-head-content -->
-                                    </div><!-- .nk-block-between -->
-                                </div><!-- .nk-block-head -->
-                                <div class="nk-block">
+                                <div class="components-preview wide-md mx-auto">
+                                    <div class="nk-block nk-block-lg">
+                                        <div class="nk-block-head nk-block-head-sm">
+                                            <div class="nk-block-between">
+                                                <div class="nk-block-head-content">
+                                                    <h4 class="nk-block-title">Pricing</h4>
+                                                    <div class="nk-block-des">
+                                                        <p>Using the most basic table markup, here’s how <code class="code-class">.table</code> based tables look by default.</p>
+                                                    </div>
+                                                </div><!-- .nk-block-head-content -->
+                                                <div class="nk-block-head-content">
+                                                    <div class="toggle-wrap nk-block-tools-toggle">
+                                                        <a href="#" class="btn btn-icon btn-trigger toggle-expand mr-n1" data-target="pageMenu"><em class="icon ni ni-more-v"></em></a>
+                                                        <div class="toggle-expand-content" data-content="pageMenu">
+                                                            <ul class="nk-block-tools g-3">
+                                                                <li class="nk-block-tools-opt">
+                                                                    <a href="#" data-toggle="modal" data-target="#addPricing" class="toggle btn btn-icon btn-primary d-md-none"><em class="icon ni ni-plus"></em></a>
+                                                                    <a href="#" data-toggle="modal" data-target="#addPricing" class="toggle btn btn-primary d-none d-md-inline-flex"><em class="icon ni ni-plus"></em><span>Add Pricing</span></a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div><!-- .nk-block-head-content -->
+                                            </div><!-- .nk-block-between -->
+                                        </div><!-- .nk-block-head -->
 
-                                    <div class="card card-preview">
-                                        <div class="card-inner">
-                                            <table class="datatable-init nowrap table" data-export-title="Export">
-                                                <thead>
-                                                    <tr>
-                                                        <th>Transaction ID</th>
-                                                        <th>Item ID</th>
-                                                        <th>Product</th>
-                                                        <th>Amount</th>
-                                                        <th>Created at</th>
-                                                        <th></th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>01112</td>
-                                                        <td>99887</td>
-                                                        <td>Music and Tea</td>
-                                                        <td>800,00</td>
-                                                        <td>23 Jan 2019, 10:45pm</td>
-                                                        <td>
-                                                            <a href="#" data-toggle="modal" data-target="#viewSale">
-                                                                <em class="icon ni ni-eye"></em>
-                                                                <span>View Sale</span>
-                                                            </a>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div><!-- .card-preview -->
-                                </div><!-- .nk-block -->
+
+
+                                        <div class="card card-preview">
+                                            <div class="card-inner">
+                                                <table class="datatable-init nowrap nk-tb-list nk-tb-ulist" data-auto-responsive="false">
+                                                    <thead>
+                                                        <tr class="nk-tb-item nk-tb-head">
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Nav Menu</span></th>
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Category</span></th>
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Sub Category</span></th>
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">License Type</span></th>
+                                                            <th class="nk-tb-col tb-col-md"><span class="sub-text">Amount</span></th>
+                                                            <th class="nk-tb-col nk-tb-col-tools text-right"></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="nk-tb-item">
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>Menu 1</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>Pictures & Video</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>Animation</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>Strange Type</span>
+                                                            </td>
+                                                            <td class="nk-tb-col tb-col-md">
+                                                                <span>₦5,000.00</span>
+                                                            </td>
+                                                            <td class="nk-tb-col nk-tb-col-tools">
+                                                                <ul class="nk-tb-actions gx-1">
+                                                                    <li>
+                                                                        <div class="drodown">
+                                                                            <a href="#" class="dropdown-toggle btn btn-icon btn-trigger" data-toggle="dropdown"><em class="icon ni ni-more-h"></em></a>
+                                                                            <div class="dropdown-menu dropdown-menu-right">
+                                                                                <ul class="link-list-opt no-bdr">
+                                                                                    <!-- <li><a href="#" data-toggle="modal" data-target="#viewLeadContributor"><em class="icon ni ni-eye"></em><span>View Pricing</span></a></li> -->
+                                                                                    <li><a href="#" data-toggle="modal" data-target="#editPricing"><em class="icon ni ni-edit"></em><span>Edit Pricing</span></a></li>
+                                                                                </ul>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </td>
+                                                        </tr><!-- .nk-tb-item  -->
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div><!-- .card-preview -->
+                                    </div> <!-- nk-block -->
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,43 +345,192 @@
         </div>
         <!-- main @e -->
     </div>
-    <!-- app-root @e -->
 
-    <!-- View Sale -->
-    <div class="modal fade" tabindex="-1" role="dialog" id="viewSale">
+    <!-- View Contributor -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="viewLeadContributor">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
                 <div class="modal-body modal-body-md">
-                    <h5 class="modal-title">View Sale</h5>
-                    <dl class="row">
-                        <dt class="col-sm-3">Product Name</dt>
-                        <dd class="col-sm-9">Air wick</dd>
+                    <h5 class="modal-title">View Lead Contributor</h5>
+                    <dl class="row pt-3">
+                        <dt class="col-sm-3">Organization Name</dt>
+                        <dd class="col-sm-9">May & Baker</dd>
 
-                        <dt class="col-sm-3">Item ID</dt>
-                        <dd class="col-sm-9">00978AS</dd>
+                        <dt class="col-sm-3">First Name</dt>
+                        <dd class="col-sm-9">Jerry</dd>
 
-                        <dt class="col-sm-3">Transaction ID</dt>
-                        <dd class="col-sm-9">00978AS</dd>
+                        <dt class="col-sm-3">Last Name</dt>
+                        <dd class="col-sm-9">Abayomi</dd>
 
-                        <dt class="col-sm-3">Amount</dt>
-                        <dd class="col-sm-9">₦1700.00</dd>
+                        <dt class="col-sm-3">Country</dt>
+                        <dd class="col-sm-9">Nigeria</dd>
 
-                        <dt class="col-sm-3">Created at</dt>
-                        <dd class="col-sm-9">2022-02-19</dd>
+                        <dt class="col-sm-3">State</dt>
+                        <dd class="col-sm-9">Lagos</dd>
+
+                        <dt class="col-sm-3">City</dt>
+                        <dd class="col-sm-9">Ikeja</dd>
+
+                        <dt class="col-sm-3">Email Address</dt>
+                        <dd class="col-sm-9">hello@demo.com</dd>
+
+                        <dt class="col-sm-3">Phone Number</dt>
+                        <dd class="col-sm-9">+89-0087-789-00</dd>
+
+                        <dt class="col-sm-3 text-truncate">Billing Address</dt>
+                        <dd class="col-sm-9">2337 Kildeer Drive</dd>
+
+                        <dt class="col-sm-3 text-truncate">Interests</dt>
+                        <dd class="col-sm-9">Gaming, Reading, Sleeping, Partying</dd>
 
                     </dl>
                 </div><!-- .modal-body -->
             </div><!-- .modal-content -->
         </div><!-- .modal-dialog -->
     </div><!-- .modal -->
-    <!-- View Sale -->
+    <!-- View Contributor -->
 
+    <!-- Edit Pricing -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="editPricing">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">Edit Pricing</h5>
+                    <form action="#" class="mt-2">
+                        <div class="row g-gs">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Category</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Music</option>
+                                            <option value="option_select_name">Video</option>
+                                            <option value="option_select_name">Images</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Sub Category</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Music</option>
+                                            <option value="option_select_name">Video</option>
+                                            <option value="option_select_name">Images</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">License Type</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Type 1</option>
+                                            <option value="option_select_name">Type 2</option>
+                                            <option value="option_select_name">Type 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="amount">Amount</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="5000">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li>
+                                        <button class="btn btn-primary">Edit Pricing</button>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="link" data-dismiss="modal">Cancel</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Edit Pricing -->
 
+    <!-- New Pricing -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="addPricing">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <a href="#" class="close" data-dismiss="modal"><em class="icon ni ni-cross-sm"></em></a>
+                <div class="modal-body modal-body-md">
+                    <h5 class="modal-title">New Pricing</h5>
+                    <form action="#" class="mt-2">
+                        <div class="row g-gs">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Category</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Music</option>
+                                            <option value="option_select_name">Video</option>
+                                            <option value="option_select_name">Images</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">Sub Category</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Music</option>
+                                            <option value="option_select_name">Video</option>
+                                            <option value="option_select_name">Images</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label">License Type</label>
+                                    <div class="form-control-wrap">
+                                        <select class="form-select" data-search="on">
+                                            <option value="default_option">Type 1</option>
+                                            <option value="option_select_name">Type 2</option>
+                                            <option value="option_select_name">Type 3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label class="form-label" for="amount">Amount</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="5000">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <ul class="align-center flex-wrap flex-sm-nowrap gx-4 gy-2">
+                                    <li><button class="btn btn-primary">New Contributor</button></li>
+                                    <li><a href="#" class="link" data-dismiss="modal">Cancel</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div><!-- .modal-body -->
+            </div><!-- .modal-content -->
+        </div><!-- .modal-dialog -->
+    </div><!-- .modal -->
+    <!-- Edit Pricing -->
 
+    
+    <!-- app-root @e -->
     <!-- JavaScript -->
     <script src="./assets/js/bundle.js?ver=2.8.0"></script>
     <script src="./assets/js/scripts.js?ver=2.8.0"></script>
+    <script src="./assets/js/charts/gd-default.js?ver=2.8.0"></script>
 </body>
 
 </html>
